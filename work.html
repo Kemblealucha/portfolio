@@ -9,6 +9,13 @@
 </head>
 
 <body>
+  <header>
+  <div class="logo-title">
+<img src="img/logo.jpeg" alt="Logo van Alucha" class="logo" width="100"  height="100">
+<h1 class="title">Mijn portfolio</h1>
+    </div>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Over mij</a>
@@ -16,18 +23,36 @@
     <a href="contact.html">Contact</a>
   </nav>
 
- <section class="work">
+  <section class="title-section">
     <h2>Mijn projecten</h2>
-    <div class="project">
+  </section>
+
+ <section class="project-card">
+  <div class="project-image">
+    <img src="img/project-GuardianVest.jpeg" alt="Project Image">
+  </div>
+   
+    <div class="project-info">
       <h3>Prototype project (Guardian Vest)</h3>
       <p>De Guardian Vest is een slim veiligheidsvest dat bedoeld is om valbewegingen te detecteren. 
         Het is bestemd voor ouderen en mensen met een bewegingsbeperking. Het vest blaast gelijk op zodra iemand zal vallen om ongelukken te 
         voorkomen. Het prototype werkte nog niet volledig, maar liet wel zien hoe het systeem in de toekomst kan functioneren.</p>
-      <h4>Wat ik heb geleerd</h4>
-      <p>Hoe je een prototype opzet, hoe je sensordata analyseert en hoe je problemen identificeert tijdens het ontwikkelproces.</p>
+      
+        <h4>Gebruikte technologiën</h4>
+        <ul>
+          <li>Arduino</li>
+          <li>Phyton</li>
+          <li>Sensoren voor valdetectie</li>
+        </ul>
 
+        <h4>Wat ik heb geleerd</h4>
+      <p>Hoe je een prototype opzet, hoe je sensordata analyseert en hoe je problemen identificeert tijdens het ontwikkelproces.</p>
+    </div>
+  </section>
+
+      <section class="project-card">
+  <div class="project-image">
       <h3>Digitale portfolio</h3>
-      <p><a href="https://kemblealucha.github.io/portfolio/" target="_blank">Bekijk project</a></p>
       <p>Mijn digitale portfolio is een website die ik heb ontworpen en gebouwd om mijn werk, projecten en vaardigheden te presenteren.
         De website bestaat uit meerdere pagina's, zoals Home, About en Projecten, en is bedoeld om mijn groei als ICT‑student te laten zien.</p>
       <p>Ik heb de volledige website zelf opgebouwd met HTML en CSS. Daarnaast heb ik de structuur ontworpen, de inhoud geschreven en de pagina's vormgegeven.
@@ -44,6 +69,11 @@
       <p>Hoe je een website opbouwt, hoe je pagina's structureert en hoe je een portfolio professioneel vormgeeft.</p>
     </div>
 </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Alucha Kemble. Portfolio.</p>
+  </footer>
+  
    <script src="js/script.js"></script>
 </body>
 </html>

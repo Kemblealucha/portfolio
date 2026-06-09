@@ -1,36 +1,83 @@
-.contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.intro, 
+.education, 
+.skills, 
+.strengths, 
+.current-work, 
+.goals {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff8ef; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.intro h2,
+.education h3,
+.skills h4,
+.strengths h4,
+.current-work h4,
+.goals h4 {
+    color: #4a2e14; 
+    margin-bottom: 15px;
 }
 
-label {
-    margin-top:10px;
-    font-weight: bold;
+.intro p,
+.education p,
+.skills ul,
+.strengths ul,
+.current-work ul,
+.goals ul {
+    color: #3b2a1a;
+    line-height: 1.6;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #c8a27a;
-    border-radius: 5px;
+ul li {
+    margin-bottom: 8px;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px;
-    background: #00aacc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+.intro-content {
+    margin-top: 15px;
 }
 
-button:hover {
-    background: #8b623f;
+@media (max-width: 1024px) {
+    .intro, 
+    .education, 
+    .skills, 
+    .strengths, 
+    .current-work, 
+    .goals {
+        width: 90%;
+    }
 }
 
+@media (max-width: 768px) {
+    .intro, 
+    .education, 
+    .skills, 
+    .strengths, 
+    .current-work, 
+    .goals {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+
+    h3, h4 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro, 
+    .education, 
+    .skills, 
+    .strengths, 
+    .current-work, 
+    .goals {
+        padding: 15px;
+    }
+}

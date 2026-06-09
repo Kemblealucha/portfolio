@@ -8,7 +8,14 @@
   <link rel="stylesheet" href="css/contact.css">
 </head>
 
-<body>
+<body class="contact">
+  <header>
+    <div class="logo-title">
+<img src="img/logo.jpeg" alt="Logo van Alucha" class="logo" width="100"  height="100">
+<h1 class="title">Mijn portfolio</h1>
+    </div>
+  </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Over mij</a>
@@ -16,9 +23,8 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="contact">
+  <section class="contact-info">
     <h2>Contact</h2>
-
     <p><strong>📞 Telefoon:</strong> 
       <a href="tel:+597899-0288">+597 899-0288</a></p>
     <p><strong>✉️ E-mail:</strong>
@@ -30,6 +36,29 @@
       <li><a href="https://www.instagram.com/slimm.giselle/" target="_blank">Instagram</a></li>
     </ul>
   </section>
+
+  <section class="contact-form">
+    <h3>Stuur mij een bericht</h3>
+    <form action="https://formsubmit.co/kemblealucha06@gmail.com" method="post">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" placeholder="Voornaam Achternaam" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Voorbeeld@gmail.com" required>
+
+      <label for="phone">Telefoonnummer:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+597 888-8888" required>
+
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Schrijf hier je bericht..." required></textarea>
+
+      <button type="submit">Verstuur</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Alucha Kemble. Portfolio.</p>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>

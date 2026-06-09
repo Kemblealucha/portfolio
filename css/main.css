@@ -1,3 +1,7 @@
+/* ===========================
+   BASIS STYLING – BRUIN THEMA
+   =========================== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f3e7d8; /* heel licht beige/bruin */
@@ -7,29 +11,63 @@ body {
 }
 
 
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* ===========================
+   NAVIGATIEBALK
+   =========================== */
+
 nav {
     background-color: #c8a27a;   /* lichtbruin */
     padding: 15px;
     text-align: center;
     border-bottom: 3px solid #a67c52; /* donkerder bruin */
+    box-shadow: 0 2px 5px rgba(166, 124, 82, 0.3);
+    position: relative;
+    z-index: 10;
 }
 
 nav a {
-    color: #4a2e14;              /* donkerbruin tekst */
+    color: #4a2e14; /* donkerbruin tekst */
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
+    position: relative;
 }
 
 nav a:hover {
-    color: #ffffff;              /* wit bij hover */
-    background-color: #a67c52;   /* donkerder bruin */
+    color: #ffffff; /* wit bij hover */
+    background-color: #a67c52;
     padding: 5px 10px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
+/* Hover-lijn onder menu items */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #a67c52;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+
+/* ===========================
+   SECTIONS
+   =========================== */
 
 section {
     width: 80%;
@@ -53,6 +91,70 @@ img {
     border-radius: 10px;
 }
 
+.project-button {
+    display: inline-block;
+    background-color: #8a4d14;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #a67c52;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    background-color: #c8a27a;
+    color: #4a2e14;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #a67c52;
+    margin-top: 40px;
+}
+
+/* ===========================
+   BLOEMEN ANIMATIE
+   =========================== */
+
+.flowers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.flower {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #c8a27a; /* lichtbruin */
+  border-radius: 50%;
+  animation: bloom 3s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes bloom {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
 
 @media (max-width: 1024px) {
     section {
@@ -98,63 +200,3 @@ img {
         padding: 15px;
     }
 }
-
-/* Bloemen container */
-.flowers {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* Bloemetjes */
-.flower {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: #c8a27a; /* lichtbruin */
-  border-radius: 50%;
-  animation: bloom 3s ease-in-out infinite;
-  opacity: 0.9;
-}
-
-/* Bloei-animatie */
-@keyframes bloom {
-  0% { transform: scale(0); opacity: 0; }
-  50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.7; }
-}
-
-/* Navigatie bruine lijn */
-nav {
-  border-bottom: 3px solid #a67c52;
-  box-shadow: 0 2px 5px rgba(166, 124, 82, 0.3);
-  z-index: 10;
-  position: relative;
-}
-
-/* Hover-lijn onder menu items */
-nav a {
-  position: relative;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #a67c52;
-  transition: width 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-

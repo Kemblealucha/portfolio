@@ -1,25 +1,134 @@
-.work h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+/* ===========================
+   PROJECTEN PAGINA – BRUIN THEMA
+   =========================== */
+
+/* Titel sectie */
+.title-section {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff8ef;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.project {
-    background: #eef7ff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+.title-section h2 {
+    color: #4a2e14;
+    font-size: 28px;
 }
 
-.project a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #0077cc;
-    color: white;
-    padding: 8px 15px;
+/* ===========================
+   PROJECT CARDS
+   =========================== */
+
+.project-card {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff8ef; /* zacht beige */
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.12);
+}
+
+/* Afbeelding */
+.project-image img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #c8a27a;
+}
+
+/* Project info */
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
+    color: #4a2e14;
+    margin-bottom: 10px;
+}
+
+.project-info h4 {
+    color: #8b5e34;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.project-info p {
+    color: #3b2a1a;
+    line-height: 1.6;
+}
+
+.project-info ul {
+    margin-left: 20px;
+}
+
+.project-info ul li {
+    margin-bottom: 6px;
+}
+
+/* Link naar project */
+.project-info a {
+    color: #8b5e34;
+    font-weight: bold;
     text-decoration: none;
+    border-bottom: 2px solid #a67c52;
 }
 
-.project a:hover {
-    background: #005fa3;
+.project-info a:hover {
+    color: #4a2e14;
+    border-bottom-color: #4a2e14;
+}
+
+.project-button {
+    display: inline-block;
+    background-color: #8a4d14;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.project-button:hover {
+    background-color: #a67c52; 
+
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 1024px) {
+    .project-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .title-section h2 {
+        font-size: 24px;
+    }
 }
 
